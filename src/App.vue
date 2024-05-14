@@ -1,10 +1,14 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <m-card imgSrc="logo.png" summary="这是一个自定义组件">
+      <template v-slot:footer>
+        <div class="footer">
+          <div class="left">哈哈哈哈</div>
+          <div class="right">嘿嘿嘿嘿</div>
+        </div>
+      </template>
+    </m-card>
+
   </div>
 </template>
 

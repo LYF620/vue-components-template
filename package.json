@@ -1,11 +1,17 @@
 {
   "name": "vue-components-template",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "./dist/index.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name index --dest dist ./components/lib/index.js"
   },
+  "files": [ 
+    "dist",
+    "components"
+  ],
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
